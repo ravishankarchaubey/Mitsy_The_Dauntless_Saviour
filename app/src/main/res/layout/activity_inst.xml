@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bgq"
+    >
+
+    <TextView
+        android:layout_width="300dp"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:text="1. Touch the button to “PLAY”."
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:text="2. You will automatically enter into Level 0, where you have to answer the given Question correctly and thereby gain higher score."
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:text="3. Choose correct answer out of four options and and after 10 questions you will enter into another Level."
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/on_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/back"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:onClick="onBack"
+        android:layout_below="@+id/textView3"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
+</RelativeLayout>
